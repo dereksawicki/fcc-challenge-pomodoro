@@ -1,0 +1,84 @@
+.var-buttons{
+	font-size: 1.4em;
+	font-family: 'Open Sans Condensed';
+	color:white;
+	margin: auto;
+	display: inline-block;
+}
+
+.var-buttons button{
+	background-color: #191919;
+	border: none;
+	width:auto;
+}
+
+.timer-paused{
+	text-align: center;
+	display: block;
+	border-style:solid;
+	height: 12em;
+	width: 12em;
+	margin-top: 4em;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 100%;
+	border-color: gray;
+}
+
+.timer-sess{
+	text-align: center;
+	display: block;
+	border-style:solid;
+	height: 12em;
+	width: 12em;
+	margin-top: 4em;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 100%;
+	border-color: #070;
+	color: #070;
+}
+
+.timer-break{
+	text-align: center;
+	display: block;
+	height: 12em;
+	width: 12em;
+	margin-top: 4em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style:solid;
+	border-radius: 100%;
+	border-color: #700;
+	color: #700;
+}
+
+
+.timer button{
+	background-color: #191919;
+	border:none;
+}
+
+.timer button:hover{
+	color: #666;
+}
+
+.timer button:focus{
+	outline:none;
+}
+
+.timer-label{
+	margin-top: 3.5em;
+}
+
+.timer p{
+	color: #888;
+}/* You can add global styles to this file, and also import other style files */
+
+.var-buttons button:focus{
+	outline: none;
+}
+
+.var-buttons button:hover{
+	color: #CCC;
+}

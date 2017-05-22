@@ -1,0 +1,30 @@
+<div class="row">
+  <!--Break Length-->
+  <div class="col-md-6">
+    <h2>BREAK LENGTH</h2>
+
+    <div class="var-buttons row">
+      <button type="button" class="col-md-4" (click)="decBreakLength()">-</button>
+      <div class="col-md-4">{{ break_length }}</div>
+      <button type="button" id="break-up" class="col-md-4" (click)="incBreakLength()" aria-pressed="false">+</button>
+    </div>
+  </div>
+
+  <!--Session Length-->
+  <div class="col-md-6">
+    <h2>SESSION LENGTH</h2>
+
+    <div class="var-buttons row">
+      <button type="button" id="sess-down" class="col-md-4" (click)="decSessLength()">-</button>
+      <div class="col-md-4">{{ sess_length }}</div>
+      <button type="button" id="sess-up" class="col-md-4" (click)="incSessLength()">+</button>
+    </div>
+  </div>
+</div>
+
+<div class="timer">
+  <div [className]="timer_state">
+    <div class="timer-label" ><p> {{ timer_label }} </p></div>
+    <button type="button" (click)="toggleTimer()">{{ time_string }}</button>
+  </div>
+<div>
