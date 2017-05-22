@@ -18,8 +18,8 @@ export class PomodoroComponent{
 	timer_state: string;
 
 	constructor(private _timeSerivce: TimeService) {
-		this.break_length = 1;
-		this.sess_length = 1;
+		this.break_length = 5;
+		this.sess_length = 25;
 		this.timer_label = "Session";
 		this.timer = this._timeSerivce.minToMilli(this.sess_length);
 		this.time_string = this._timeSerivce.milliToTimeString(this.timer);
@@ -51,7 +51,7 @@ export class PomodoroComponent{
 				else
 					this.timer_state = "timer-sess";
 			}
-		}, 200) // update once every 1000 seconds
+		}, 1000) // update once every 1000 seconds
 	}
 
 
